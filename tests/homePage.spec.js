@@ -16,4 +16,10 @@ test.describe('homePage.spec.js', () => {
     await expect(homePage.createAdBtn).toHaveText('Create an ad!');
   });
 
+  test('Verify Login In button is visible on the Home page', async ({ page }) => {
+    const homePage = new HomePage(page);
+
+    await expect(homePage.loginInBtn).toHaveText('Log in');
+  });
+
 });

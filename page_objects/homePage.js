@@ -6,6 +6,7 @@ class HomePage {
         this.page = page;
 
         this.createAdBtn = page.locator('.create');
+        this.loginInBtn = page.locator('.register[href="/login"]');
     }
 
     async open() {
