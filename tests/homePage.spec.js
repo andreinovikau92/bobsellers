@@ -29,7 +29,7 @@ test.describe('homePage.spec.js', () => {
     await expect(homePage.newRadioButton).toBeChecked();
   });
 
-  test.only('Verify a Used radio button is checked', async ({page}) => {
+  test('Verify a Used radio button is checked', async ({page}) => {
     const homePage = new HomePage(page);
 
     await homePage.checkNewRadionButton();
