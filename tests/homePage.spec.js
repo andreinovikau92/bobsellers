@@ -38,4 +38,9 @@ test.describe('homePage.spec.js', () => {
     await expect(homePage.usedRadioButton).toBeChecked();
   });
 
+  test('Verify the Search bar is visible', async ({ page }) => {
+    const homePage = new HomePage(page);
+
+    await expect(homePage.searchField).toBeVisible();
+  });
 });

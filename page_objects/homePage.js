@@ -9,6 +9,7 @@ class HomePage {
         this.loginInBtn = page.locator('.register[href="/login"]');
         this.newRadioButton = page.locator('#new');
         this.usedRadioButton = page.locator('#used');
+        this.searchField = page.locator('[placeholder="What are you looking for?"]');
     }
 
     async open() {
